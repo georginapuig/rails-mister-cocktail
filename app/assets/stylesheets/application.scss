@@ -11,3 +11,60 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 190px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 43px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.card-category {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btn-flat {
+  position: absolute;
+  font-size: 14px;
+  bottom: 35px;
+  right: 28px;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 4px;
+  background: rgba(#fcfcfc, 0.3);
+  transition: background 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-flat:hover {
+  background: #cb301b;
+  color: white;
+}
+
+.btn-warning {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 8px 26px;
+  border-radius: 5px;
+}

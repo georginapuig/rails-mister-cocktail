@@ -1,0 +1,8 @@
+<div class="container col-4 pt-5">
+  <h2>Add a new cocktail</h2>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, class: "btn btn-success" %>
+  <% end %>
+  <%= link_to("Back", cocktails_path) %>
+</div>

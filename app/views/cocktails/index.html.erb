@@ -1,0 +1,19 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url(https://images.unsplash.com/photo-1570869937455-a347fba0a41b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
+  <div class="container text-center">
+    <h1>Cocktails</h1>
+    <%= link_to("Add new", new_cocktail_path, class:"btn btn-warning mt-3") %>
+  </div>
+</div>
+
+<div class="container pt-5">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-md-4 pb-4">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail.photo %>')">
+          <%= link_to(cocktail.name, cocktail, class:"text-white text-decoration-none") %>
+          <!-- <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: { confirm: 'Are you sure you want to delete?'}, class: 'btn btn-flat' %> -->
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
