@@ -9,7 +9,7 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-md-4 pb-4">
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail.photo %>')">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/collection/9474242')">
           <%= link_to(cocktail.name, cocktail, class:"text-white text-decoration-none") %>
           <!-- <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: { confirm: 'Are you sure you want to delete?'}, class: 'btn btn-flat' %> -->
         </div>
